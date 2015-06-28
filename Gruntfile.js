@@ -39,14 +39,6 @@ module.exports = function (grunt) {
 			}
 		},
 
-		shell: {
-			'bower-installer': {
-				command: 'bower-installer',
-				stdout: true,
-				failOnError: true
-			}
-		},
-
 		concurrent: {
 			options: {
 				logConcurrentOutput: true
@@ -59,13 +51,25 @@ module.exports = function (grunt) {
 
 	});
 
+	grunt.registerTask('_compile', [
+		'sass:main'
+	]);
+
+	grunt.registerTask('_server', [
+		'express:dev'
+	]);
+
+	grunt.registerTask('_watch', [
+		'concurrent'
+	]);
+
 	grunt.registerTask('init', [
-		'shell:bower-installer'
+		'_compile'
 	]);
 
 	grunt.registerTask('dev', [
-		'sass:main',
-		'express:dev',
-		'concurrent'
+		'_compile',
+		'_server',
+		'_watch'
 	]);
 };

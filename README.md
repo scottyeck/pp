@@ -12,8 +12,8 @@ Follow the instructions below to get up and running.
 	# Then, prep your DEV ENVIRONMENT
 	# ------------------------------------------------------------------------
 
-	$ npm install						# install node deps
-	$ grunt init						# install all other deps
+	$ npm install						# install all local deps and run
+										# initial compiles
 
 	# Finally, RUN IT!
 	# ------------------------------------------------------------------------
