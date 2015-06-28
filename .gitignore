@@ -3,6 +3,7 @@
 #####################
 bower_components
 public/js/lib/**/*
+public/scss/lib/**/*
 
 #####################
 # sass				#

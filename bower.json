@@ -1,18 +1,16 @@
 {
 	"name": "pp",
 	"dependencies": {
-		"jquery": "git@github.com:jquery/jquery.git",
-		"backbone": "git@github.com:jashkenas/backbone.git",
-		"normalizer": "git@github.com:hail2u/normalize.scss.git"
+		"jquery": "~2.1.4",
+		"backbone": "~1.2.1",
+		"normalize.scss": "~3.0.2",
+		"handlebars": "~3.0.3",
+		"underscore": "~1.8.3"
 	},
 	"install": {
 		"path": {
-			"js": "public/js/lib"
-		},
-		"sources": {
-			"backbone": [ "bower_components/backbone/backbone-min.js" ],
-			"jquery": [ "bower_components/jquery/dist/jquery.min.js" ],
-			"underscore": [ "bower_components/underscore/underscore-min.js" ]
+			"js": "public/js/lib",
+			"scss": "public/scss/lib"
 		}
 	}
 }
