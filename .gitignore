@@ -4,6 +4,7 @@
 bower_components
 public/js/lib/**/*
 public/scss/lib/**/*
+foundation*
 
 #####################
 # sass				#
